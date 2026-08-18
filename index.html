@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Join Gujarati Trader — free stock market education community on Telegram.">
+<title>GUJARATI TRADER | Official Community</title>
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #fdf3fb;
+  background: #17081A;
+}
+
+.wrapper { width: 100%; max-width: 420px; }
+
+.card {
+  background: #200E28;
+  border: 1px solid rgba(219, 39, 119, 0.25);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+/* Bandhani dot-pattern strip - static, culturally inspired texture */
+.bandhani-strip {
+  height: 14px;
+  background-color: #1B2A2E;
+  background-image: radial-gradient(#DB2777 2px, transparent 2px), radial-gradient(#14B8A6 2px, transparent 2px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.body-pad { padding: 20px 20px 24px; text-align: center; }
+
+/* Square avatar with gold border */
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 3px solid #DB2777;
+  background: #2e1832;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(219, 39, 119, 0.1);
+  border: 1px solid rgba(219, 39, 119, 0.3);
+  color: #F286B8;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.subtitle {
+  font-size: 12.5px;
+  color: #b58fc4;
+  margin-bottom: 16px;
+}
+
+/* Icon-value inline stat row */
+.icon-stats {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  padding: 11px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.icon-stats .is {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: #e8d3f2;
+}
+.icon-stats .is i { color: #14B8A6; font-size: 11px; }
+.icon-stats .is b { color: #14B8A6; }
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #DB2777 0%, #14B8A6 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0 12px 30px rgba(219, 39, 119, 0.3);
+  transition: transform 0.15s ease, filter 0.2s ease;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+.cta-btn:active { transform: scale(0.97); }
+.cta-btn:hover { filter: brightness(1.08); }
+
+.timer-text {
+  font-size: 12px;
+  color: #8f6e9c;
+  margin-bottom: 18px;
+}
+.timer-text span { color: #DB2777; font-weight: 700; }
+
+/* Numbered vertical steps */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  margin-bottom: 4px;
+}
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(219, 39, 119, 0.12);
+  border: 1px solid rgba(219, 39, 119, 0.35);
+  color: #F286B8;
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.step-row span.txt { font-size: 12px; color: #f0e2f2; }
+
+.disclaimer {
+  margin-top: 16px;
+  font-size: 9.5px;
+  line-height: 1.6;
+  color: #5c3d63;
+  text-align: center;
+  padding: 10px 6px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+</style>
+
+</head>
+<body>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2487432261767213');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2487432261767213&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<div class="wrapper">
+  <div class="card">
+
+    <div class="bandhani-strip"></div>
+
+    <div class="body-pad">
+      <img src="gujrati.jpeg" class="avatar" alt="Profile Image" width="84" height="84" decoding="async" fetchpriority="high">
+
+      <div class="badge"><i class="fas fa-shield-halved"></i> Verified Educational Community</div>
+
+      <h1>GUJARATI TRADER</h1>
+      <p class="subtitle">શેર બજાર &amp; Financial Trading Education</p>
+
+      <div class="icon-stats">
+        <div class="is"><i class="fas fa-graduation-cap"></i> <b>100%</b> શરૂઆત</div>
+        <div class="is"><i class="fas fa-calendar-day"></i> <b>દરરોજ</b> Updates</div>
+        <div class="is"><i class="fas fa-unlock"></i> <b>મફત</b> Access</div>
+      </div>
+
+      <a class="cta-btn" id="telegramBtn" href="https://t.me/+CWZxMOZKgeQzYWI1" rel="noopener noreferrer">
+        <i class="fab fa-telegram-plane"></i> Join Free Telegram Community
+      </a>
+      <div class="timer-text">
+        ⏳ Auto-redirecting in <span id="count">8</span>s...
+      </div>
+
+      <div class="steps">
+        <div class="step-row"><div class="step-num">1</div><span class="txt">દરરોજ Market Updates અને Insights</span></div>
+        <div class="step-row"><div class="step-num">2</div><span class="txt">મફત Educational Content</span></div>
+        <div class="step-row"><div class="step-num">3</div><span class="txt">સરળ સમજૂતી શરૂઆત માટે</span></div>
+        <div class="step-row"><div class="step-num">4</div><span class="txt">સંપૂર્ણ Community Support</span></div>
+      </div>
+
+      <div class="disclaimer">
+        <strong>Disclaimer:</strong> આ platform ફક્ત educational અને informational હેતુઓ માટે છે. અમે કોઈ financial advice આપતા નથી અને નફાની કોઈ ગેરંટી નથી. Stock market investments carry risk — રોકાણ કરતા પહેલા તમારું પોતાનું research કરો.
+      </div>
+
+      <div style="text-align:center; margin-top: 14px;">
+        <a href="https://t.me/srsagency" target="_blank" rel="noopener noreferrer" style="display:inline-block; padding:6px 14px; border-radius:20px; background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); color:#8f6e9c; font-size:10px; font-weight:600; text-decoration:none; letter-spacing:0.3px;">
+          Ads By SRS ADS
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const telegramLink = "https://t.me/+CWZxMOZKgeQzYWI1";
+  let time = 8;
+  const counter = document.getElementById("count");
+  const telegramBtn = document.getElementById("telegramBtn");
+
+  telegramBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (window.fbq) {
+      fbq('track', 'Subscribe', { content_name: 'Telegram Community', button_click: true }, { eventID: 'telegram_subscribe_' + Date.now() });
+    }
+    setTimeout(() => {
+      window.location.href = telegramLink;
+    }, 200);
+  });
+
+  const countdown = setInterval(() => {
+    time--;
+    counter.textContent = time;
+    if (time <= 0) {
+      clearInterval(countdown);
+      window.location.href = telegramLink;
+    }
+  }, 1000);
+})();
+</script>
+
+</body>
+</html>
